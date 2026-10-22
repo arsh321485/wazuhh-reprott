@@ -4,9 +4,6 @@ node_modules/
 out/
 /test-sample.*
 
-# Flask original (kept in flask-original/ for reference)
 uploads/
-venv/
 .env
-__pycache__/
 *.local

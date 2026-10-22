@@ -1,6 +1,6 @@
 # Wajuh Report — Next.js (Vercel)
 
-Next.js port of the Flask app in `flask-original/` (`app.py` + `templates/`).
+Next.js port of the original Flask app (`app.py` + `templates/`, now removed).
 Same upload → report flow, same report layout, ready to deploy on Vercel.
 
 ## Run locally
@@ -23,7 +23,7 @@ preset: **Next.js** (auto-detected). Root directory: this folder.
 
 ## Flask → Next.js mapping
 
-| Flask (`flask-original/app.py`) | Next.js |
+| Flask (`app.py`, removed) | Next.js |
 |---|---|
 | `GET /` → `templates/index.html` | `app/page.tsx` (upload form) |
 | `POST /upload` | `lib/process-report.ts` (UI) + `app/api/upload/route.ts` (API parity: `POST /api/upload`, returns JSON + base64 files) |
@@ -67,5 +67,3 @@ Faithfulness notes (verified against a real Flask-generated report):
   only resolves image objects then), and emitted before page rasters —
   Flask's order — so the report shows the two large chart images, not a
   shrunken full-page raster.
-
-The original Flask code is preserved unchanged under `flask-original/`.
