@@ -1,0 +1,12 @@
+# Next.js
+node_modules/
+.next/
+out/
+/test-sample.*
+
+# Flask original (kept in flask-original/ for reference)
+uploads/
+venv/
+.env
+__pycache__/
+*.local
